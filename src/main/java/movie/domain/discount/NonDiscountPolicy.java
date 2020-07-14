@@ -3,9 +3,9 @@ package movie.domain.discount;
 import movie.domain.Money;
 import movie.domain.Screening;
 
-public class NonDiscountPolicy extends DiscountPolicy {
+public class NonDiscountPolicy implements DiscountPolicy {
     @Override
-    protected Money getDiscountAmount(Screening screening) {
+    public Money calculateDiscountAmount(Screening screening) {
         return Money.ZERO;
     }
 }
