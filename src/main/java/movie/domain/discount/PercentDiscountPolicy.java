@@ -1,6 +1,6 @@
 package movie.domain.discount;
 
-import movie.domain.Money;
+import money.Money;
 import movie.domain.Screening;
 
 public class PercentDiscountPolicy extends DefaultDiscountPolicy {

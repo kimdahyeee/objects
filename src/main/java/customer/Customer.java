@@ -1,4 +1,4 @@
-package movie.domain;
+package customer;
 
 public class Customer {
 }

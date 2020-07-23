@@ -1,5 +1,6 @@
 package movie.domain;
 
+import money.Money;
 import movie.domain.discount.*;
 import org.junit.Test;
 
