@@ -1,5 +1,6 @@
 package chapter5;
 
+import chapter5.movie.Movie;
 import customer.Customer;
 import money.Money;
 
