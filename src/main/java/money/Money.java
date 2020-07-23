@@ -1,4 +1,4 @@
-package movie.domain;
+package money;
 
 import java.math.BigDecimal;
 
