@@ -1,4 +1,4 @@
-package movie.domain;
+package chapter2.movie;
 
 import customer.Customer;
 import money.Money;

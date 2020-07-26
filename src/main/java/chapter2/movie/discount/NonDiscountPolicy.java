@@ -1,7 +1,7 @@
-package movie.domain.discount;
+package chapter2.movie.discount;
 
 import money.Money;
-import movie.domain.Screening;
+import chapter2.movie.Screening;
 
 public class NonDiscountPolicy implements DiscountPolicy {
     @Override

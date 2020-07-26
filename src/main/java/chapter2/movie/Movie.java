@@ -1,7 +1,7 @@
-package movie.domain;
+package chapter2.movie;
 
 import money.Money;
-import movie.domain.discount.DiscountPolicy;
+import chapter2.movie.discount.DiscountPolicy;
 
 import java.time.Duration;
 

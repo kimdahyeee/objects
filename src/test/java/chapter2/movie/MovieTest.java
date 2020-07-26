@@ -1,7 +1,7 @@
-package movie.domain;
+package chapter2.movie;
 
 import money.Money;
-import movie.domain.discount.*;
+import chapter2.movie.discount.*;
 import org.junit.Test;
 
 import java.time.DayOfWeek;

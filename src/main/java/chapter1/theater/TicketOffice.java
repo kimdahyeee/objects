@@ -1,4 +1,4 @@
-package theater.domain;
+package chapter1.theater;
 
 import java.util.ArrayList;
 import java.util.Arrays;

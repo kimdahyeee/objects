@@ -1,6 +1,6 @@
-package movie.domain.discount;
+package chapter2.movie.discount;
 
-import movie.domain.Screening;
+import chapter2.movie.Screening;
 
 public class SequenceCondition implements DiscountCondition {
     private int sequence;

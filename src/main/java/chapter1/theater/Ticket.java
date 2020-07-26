@@ -1,4 +1,4 @@
-package theater.domain;
+package chapter1.theater;
 
 public class Ticket {
     private Long fee;
