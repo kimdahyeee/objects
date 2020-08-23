@@ -6,7 +6,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NightlyDiscountPhone {
+public class NightlyDiscountPhone extends AbstractPhone {
     private static final int LATE_NIGHT_HOUR = 22;
 
     private Money nightlyAmount;
@@ -20,17 +20,8 @@ public class NightlyDiscountPhone {
         this.seconds = seconds;
     }
 
-    public Money calculateFee() {
-        Money result = Money.ZERO;
-
-        for (Call call : calls) {
-            result = result.plus(calculateCallFee(result, call));
-        }
-
-        return result;
-    }
-
-    private Money calculateCallFee(Money result, Call call) {
+    @Override
+    protected Money calculateCallFee(Call call) {
         if (call.getFrom().getHour() >= LATE_NIGHT_HOUR) {
             return nightlyAmount.times(call.getDuration().getSeconds() / seconds.getSeconds());
         } else {
