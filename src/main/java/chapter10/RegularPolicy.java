@@ -4,22 +4,13 @@ import money.Money;
 
 import java.time.Duration;
 
-public class RegularPhone extends Phone {
+public class RegularPolicy extends BasicRatePolicy {
     private Money amount;
     private Duration seconds;
 
-    public RegularPhone(Money amount, Duration seconds, double taxRate) {
-        super(taxRate);
+    public RegularPolicy(Money amount, Duration seconds) {
         this.amount = amount;
         this.seconds = seconds;
-    }
-
-    public Money getAmount() {
-        return amount;
-    }
-
-    public Duration getSeconds() {
-        return seconds;
     }
 
     @Override
