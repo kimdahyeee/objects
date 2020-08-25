@@ -34,4 +34,10 @@ public class RegularPhoneTest {
         Phone phone = new Phone(new NightlyDiscountPolicy(Money.wons(5), Money.wons(10), Duration.ofSeconds(10)));
         assertNotNull(phone);
     }
+
+    @Test
+    public void 일반요금제_세금정책_조합() {
+        Phone phone = new Phone(new TaxablePolicy(new RegularPolicy(Money.wons(5), Duration.ofSeconds(10)), 0.05));
+        assertNotNull(phone);
+    }
 }
